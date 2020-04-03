@@ -25,7 +25,7 @@ def main(args, load_exclude_set, restoreCallback):
 	volatile.load_exclude_set = load_exclude_set
 	volatile.restoreCallback = restoreCallback
 
-	data_class = LanguageGeneration.load_class(args.dataset)
+	data_class = LanguageGeneration
 	data_arg = Storage()
 	data_arg.file_id = args.dataid
 	data_arg.tokenizer = args.tokenizer
